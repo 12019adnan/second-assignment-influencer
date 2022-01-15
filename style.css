@@ -9,7 +9,7 @@ body{
 ********************************** */
 
 .first-heading{
-    margin-left: 145px;
+    margin-left: 112px;
     font-weight:bolder ;
 }    
 
@@ -38,7 +38,7 @@ body{
 }
 
 .first-article a{
-    background-color:#04080e ;
+    background-color: rgba(226, 21, 100, 0.788) ;
     color: antiquewhite;
     text-decoration: none;
     padding: 4px 20px;
@@ -61,7 +61,7 @@ body{
     padding: 20px;
     border-radius: 7px;
     border: opx solid;
-    background-color: rgba(243, 234, 223, 0.863);
+    background-color: rgba(220, 224, 224, 0.521);
     
 }
 .flexible-container{
@@ -85,7 +85,7 @@ body{
 
  .second-anchor a{
     margin-left: 980px ;
-    background-color:#04080e ;
+    background-color: rgba(226, 21, 100, 0.788) ;
     color: antiquewhite;
     text-decoration: none;
     padding: 4px 20px;
@@ -103,14 +103,18 @@ body{
 .tranformation-box{
     width: 900px;
     height: 300px;
-    border:1px solid rgb(187, 154, 154);
+    border:0px solid;
+    background-color:  rgba(80, 45, 105, 0.199);
+    border-radius: 20px;
     margin-left: 200px;
-    
-    
+            
 }
+
 
 .box-text-alignment h1{
     margin-left: 300px;
+    padding-top:20px ;
+    
 }
 .box-text-alignment p{
     padding: 15px;
@@ -119,20 +123,26 @@ body{
 }
 .tranformation-box:hover p{
     display: block;
+    
+    
   }
-  
+  .update-paragraph p{
+    transition-delay: 2s ;
+  }
 
+/* --------_________-----------____________-----------______-------- */
 /* footer */
 .footer, span{
     display: grid;
     justify-content: center;
     align-items: center;
+    
 }
 .added-style{
     margin-top: 100px;
     padding-bottom: 25px;
     padding-top: 20px;
-    background-color: rgba(108, 76, 131, 0.705);
+    background-color: rgba(80, 45, 105, 0.473);
 }
 .footer-icon{
  margin-left: 605px;
@@ -141,12 +151,14 @@ body{
     margin: 6px;
     font-size: larger;
 }
+/* ___________-----------------_______________-------------- */
 
 @media only screen and (max-width:688px){
 
     .first-heading{
         margin-right: 100px;
     }
+    
 .starting-influence{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -156,29 +168,105 @@ body{
 .first-article{
    margin-left: 50px;
 }
+.first-article a {
+    padding: 10px;
+}
+.header-image img{
+    width: 100%;
+    margin-top: 30px;
+}
 
+/* ________________________________________ */
 .flexible-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    margin-left: 20px;
+    
+}
+.second-anchor a{
+   margin-left: 200px;
+}
+/* ---------------______--------_____-------____--------____------- */
+.tranformation-box {
+    width: 350px;
+    height: 600px;
+    margin-left: 20px;
+    
+}
+.box-text-alignment p{
+    width: 85% ;
+    padding-left: 30px;
+}
+.box-text-alignment h1{
+    margin-left: 26px;
+}
+/* ------------____------____---------______---------_______-------__ */
+.footer-icon{
+    margin-left: 130px;
+} 
+}
+
+/* tablet devices */
+@media only screen and (min-width:688px) and (max-width:992px){
+    .first-heading{
+        margin-left: 0px;
+    }
+.starting-influence{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 130px;
+    width: 100%;
+}
+.first-article{
+    margin-left: 50px;
+}
+/* _______________________________________ */
+.flexible-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     
     margin-left: 22px;
     
 }
 .second-anchor a{
-   margin-left: 250px;
+   margin-left: 570px;
 }
- .footer-icon{
+/* _______________________________________ */
+
+.footer-icon{
     margin-left: 130px;
 } 
 .tranformation-box {
-    width: 390px;
+    width: 750px;
     height: 380px;
     margin-left: 0px;
 }
 .box-text-alignment p{
-    width: 78% ;
+    width:95% ;
+    padding-left: 20px;
+    
 }
 .box-text-alignment h1{
-    margin-left: 20px;
+    margin-left: 250px;
 }
+/* _______________________------------_______________ */
+
+.footer-icon{
+    margin-left: 130px;
+} 
+.tranformation-box {
+    width: 750px;
+    height: 380px;
+    margin-left: 22px;
+}
+.box-text-alignment p{
+    width: 95% ;
+}
+.box-text-alignment h1{
+    margin-left: 240px;
+}
+/* ---------------___________--------______-------______-------_*/
+.footer-icon{
+    margin-left: 330px;
+} 
 }
